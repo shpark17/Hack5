@@ -12,5 +12,5 @@ double getAirDistance(double originLatitude, double originLongitude, destination
   return acos(sin(originLatitudeR)*sin(destinationLatitudeR)+cos(originLatitudeR)*cos(destinationLatitudeR)*cos(destinationLongitudeR-originLongitudeR) * 6371;
 }
 double lorentzTimeDilation(double t, double percentC) {
-  return t/sqrt((1)-(percentC*percemtC));
+  return t/sqrt((1)-(percentC*percentC));
 }
