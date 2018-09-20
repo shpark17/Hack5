@@ -9,7 +9,7 @@ double getAirDistance(double originLatitude, double originLongitude, destination
   double originLongitudeR = degreesToRadians(originLongitude);
   double destinationLatitudeR = degreesToRadians(destinationLatitude);
   double destinationLongitudeR = degreesToRadians(destinationLongitude);
-  return acos(sin(originLatitude)*sin(destinationLatitude)+cos(originLatitude)*cos(destinationLatitude)*cos(destinationLongitude-originLongitude) * 6371;
+  return acos(sin(originLatitudeR)*sin(destinationLatitudeR)+cos(originLatitudeR)*cos(destinationLatitudeR)*cos(destinationLongitudeR-originLongitudeR) * 6371;
 }
 double lorentzTimeDilation(double t, double percentC) {
   return t/sqrt((1)-(percentC*percemtC));
